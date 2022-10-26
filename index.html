@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <body>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <div id="root">
+      <!-- <h1>Hi</h1>
+      <h3>Bye</h3>
+      <h5>Children</h5> -->
+    </div>
+
+    <script tyle="text/babel">
+      const rootElement = document.getElementById("root");
+      const element = (
+        <React.Fragment>
+          <h1>Hi</h1>
+          <h3>Bye</h3>
+          <h5>Children</h5>
+        </React.Fragment>
+      );
+      console.log(element);
+      ReactDOM.render(element, rootElement);
+    </script>
+
+  </body>
+</html>
